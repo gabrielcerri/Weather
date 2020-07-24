@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+
+
+
+
+body {
+	
+	height: 100%;
+	width:100%;
+	overflow: hidden;
+	font-family: 'Noto Sans JP', sans-serif;
+
+
+}
+
+
+
+.container {
+	height: 98vh;
+	width: 98vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.information {
+
+	width: 500px;
+	height: 250px;
+	background: rgb(2,0,36,1);
+	background: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(21,21,56,0.8) 35%, rgba(21,68,78,0.8) 100%);
+	border:4px ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border:4px solid black;
+}
+
+
+#temperature {
+	font-size: 40px;
+}
+
+
