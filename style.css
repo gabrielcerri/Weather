@@ -21,6 +21,7 @@ body {
 	font-family: 'Noto Sans JP', sans-serif;
 
 
+
 }
 
 
@@ -37,15 +38,17 @@ body {
 .information {
 
 	width: 500px;
-	height: 250px;
-	background: rgb(2,0,36,1);
-	background: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(21,21,56,0.8) 35%, rgba(21,68,78,0.8) 100%);
+	height: 350px;
+	background-color: rgba(0,0,0,0.3);
+	
+	
 	border:4px ;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	border:4px solid black;
+	border:2px solid grey;
+	border-radius: 30px;
 }
 
 

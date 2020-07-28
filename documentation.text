@@ -1,0 +1,6 @@
+Paso a paso de la aplición: 
+
+-Primero: Empezar a implementar API´s de Geolocalización y Clima
+-Segundo: Realizar las animaciones que dependar de horario/temperatura
+	-2.1: Para ello realizaremos un set interval que se actualice cada x tiempo(a confirmar)
+	-2.2: 
