@@ -41,8 +41,8 @@ body {
 
 .information {
 
-	width: 500px;
-	height: 350px;
+	width: 550px;
+	height: 400px;
 	background-color:rgba(0, 0, 0,0.3); 
   	border: 1px solid black;
  
@@ -58,8 +58,15 @@ body {
 	border-radius: 30px;
 }
 
+.information h3 {
+
+	margin-top: 5px;
+}
 
 
+.timezone {
+	font-size:20px; 
+}
 
 
 #temperature {

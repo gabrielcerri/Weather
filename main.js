@@ -3,6 +3,8 @@
 			
 
 
+
+
 		function getWeather () {
 
 			let temperature = document.querySelector('#temperature')
@@ -11,6 +13,9 @@
 			let timezone= document.querySelector('.timezone')
 			let st= document.querySelector('.feels-like')
 			let wicon = document.querySelector('#wicon')
+
+			let lang =navigator.language
+			let arr = lang.slice(0,2)
 		
 			
 			let api = "https://api.openweathermap.org/data/2.5/weather"
@@ -23,7 +28,6 @@
 
 
 
-
 		
 
 			function success (position) {
@@ -33,7 +37,7 @@
 				longitude = position.coords.longitude;
 			
 				const http = new XMLHttpRequest()
-				http.open('GET', "https://api.weatherapi.com/v1/current.json?key=d19f73ef00a64948bd814612202207&q="+latitude+","+longitude+"&lang=es")
+				http.open('GET', "https://api.weatherapi.com/v1/current.json?key=d19f73ef00a64948bd814612202207&q="+latitude+","+longitude+"&lang="+arr)
 
 				http.send()
 
@@ -51,6 +55,8 @@
 					
 					let icon  = data.current.condition.icon
 
+					let tz = data.location.tz_id
+
 					temperature.innerHTML = data.current.temp_c + "° C"
 					description.innerHTML =data.current.condition.text
 					location.innerHTML = 
@@ -61,8 +67,25 @@
 					wicon.style.width = '80px'
 					wicon.style.height = '80px'
 
+				function refreshTime () {
+
+				let date = new Date().toLocaleString(arr,{timezone: tz })
+				let formattedString = date.replace(", ", " - ")
+				timezone.innerHTML = formattedString
+
+
+				}	
+
+
+
+
+				setInterval(refreshTime,1000)
+	
+
+
 
 				}
+
 
 				
 			}
@@ -77,8 +100,15 @@
 
 
 
+
+
+
+
+
+
 		}
 
+		
 
 		getWeather()
 
