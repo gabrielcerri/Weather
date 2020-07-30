@@ -10,6 +10,7 @@
 			let location = document.querySelector('#location')
 			let timezone= document.querySelector('.timezone')
 			let st= document.querySelector('.feels-like')
+			let wicon = document.querySelector('#wicon')
 		
 			
 			let api = "https://api.openweathermap.org/data/2.5/weather"
@@ -33,6 +34,7 @@
 			
 				const http = new XMLHttpRequest()
 				http.open('GET', "https://api.weatherapi.com/v1/current.json?key=d19f73ef00a64948bd814612202207&q="+latitude+","+longitude+"&lang=es")
+
 				http.send()
 
 				http.onreadystatechange = function () {
@@ -46,15 +48,19 @@
 					const data = JSON.parse(http.responseText)
 
 					console.log(data)
+					
+					let icon  = data.current.condition.icon
 
 					temperature.innerHTML = data.current.temp_c + "° C"
-
 					description.innerHTML =data.current.condition.text
-
 					location.innerHTML = 
 					data.location.name + "," + data.location.region + "," + data.location.country
-
 					st.innerHTML =data.current.feelslike_c + "° C"
+
+					wicon.src ="http:"+icon
+					wicon.style.width = '80px'
+					wicon.style.height = '80px'
+
 
 				}
 
