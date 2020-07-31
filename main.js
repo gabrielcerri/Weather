@@ -57,11 +57,11 @@
 
 					let tz = data.location.tz_id
 
-					temperature.innerHTML = data.current.temp_c + "° C"
+					temperature.innerHTML = data.current.temp_c + "°C"
 					description.innerHTML =data.current.condition.text
 					location.innerHTML = 
 					data.location.name + "," + data.location.region + "," + data.location.country
-					st.innerHTML =data.current.feelslike_c + "° C"
+					st.innerHTML ="ST: " + data.current.feelslike_c + "°C"
 
 					wicon.src ="http:"+icon
 					wicon.style.width = '80px'
