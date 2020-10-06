@@ -1,4 +1,4 @@
-# WeatherApp :cloud: :cloud:
+# WeatherApp :umbrella:
 Utilizando la API de (http://www.weatherapi.com/) desarrollé una web que a partir de tu geolocalización informa con:
 
   * Temperatura en °C (Celsius).
