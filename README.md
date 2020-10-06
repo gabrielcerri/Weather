@@ -11,7 +11,7 @@ Using the API from (http://www.weatherapi.com/) I worked on a web that, based on
   
 ---
 
-## Technologies used :computer: :
+## Technologies that I used :computer: :
 
   * HTML
   * CSS
