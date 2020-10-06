@@ -1,5 +1,5 @@
-# WeatherApp
-Utilizando la API de (http://www.weatherapi.com/) desarrollé una app que a partir de tu geolocalización informa con:
+# WeatherApp :cloud: :cloud:
+Utilizando la API de (http://www.weatherapi.com/) desarrollé una web que a partir de tu geolocalización informa con:
 
   * Temperatura en °C (Celsius).
   * Ciudad, Provincia o Estado, País.
