@@ -1,5 +1,8 @@
-# WeatherApp :umbrella:
-Using the API from (http://www.weatherapi.com/) I worked on a web that, based on your geolocation, shows you:
+# [WeatherApp :umbrella:](https://gabrielcerri.github.io/Weather/) 
+
+
+
+Using the API from [weatherapi](http://www.weatherapi.com/) I worked on a web that, based on your geolocation, shows you:
 
   * Temperature in °C (Celsius).
   * Thermal sensation in °C (Celsius)
@@ -17,6 +20,5 @@ Using the API from (http://www.weatherapi.com/) I worked on a web that, based on
   * CSS
   * JAVASCRIPT using XMLHttpRequest and then turning it in a  JSON File with JSON.parse().
 
-[Weather App](https://gabrielcerri.github.io/Weather/)
 
 
